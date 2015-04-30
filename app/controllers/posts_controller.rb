@@ -8,7 +8,7 @@ class PostsController < ApplicationController
   end
   
   def show
-    response_with Post.find(params[:id])
+    respond_with Post.find(params[:id])
   end
   
   def upvote
